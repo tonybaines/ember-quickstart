@@ -1,0 +1,7 @@
+= Notes
+
+. Install npm
+. Install ember
+`sudo npm install -g node@2.15`
+. Create project
+`ember new ember-quickstart`
