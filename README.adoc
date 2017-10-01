@@ -1,7 +1,20 @@
 = Notes
 
+. Install IntelliJ plugins
+ * ember.js
+ * Handlebars/Mustache
 . Install npm
 . Install ember
-`sudo npm install -g node@2.15`
+ * `sudo npm install -g node@2.15`
 . Create project
-`ember new ember-quickstart`
+ * `ember new ember-quickstart`
+. Install `watchman`
+```
+$ git clone https://github.com/facebook/watchman.git
+$ cd watchman
+$ git checkout v4.9.0  # the latest stable release
+$ ./autogen.sh
+$ ./configure
+$ make
+$ sudo make install
+```
