@@ -4,17 +4,30 @@
  * ember.js
  * Handlebars/Mustache
 . Install npm
+ * OR update to latest
+
+    sudo npm install -g npm
+    sudo npm install -g n
+    sudo n stable
+
+. Install Yarn
+
+    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+    sudo apt-get update && sudo apt-get install yarn
+
 . Install ember
  * `sudo npm install -g node@2.15`
 . Create project
- * `ember new ember-quickstart`
+ * `ember new ember-quickstart --yarn`
 . Install `watchman`
-```
-$ git clone https://github.com/facebook/watchman.git
-$ cd watchman
-$ git checkout v4.9.0  # the latest stable release
-$ ./autogen.sh
-$ ./configure
-$ make
-$ sudo make install
-```
+
+    $ git clone https://github.com/facebook/watchman.git
+    $ cd watchman
+    $ git checkout v4.9.0  # the latest stable release
+    $ ./autogen.sh
+    $ ./configure
+    $ make
+    $ sudo make install
+
